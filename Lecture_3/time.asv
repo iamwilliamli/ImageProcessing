@@ -1,0 +1,14 @@
+clc;clear;
+a = pwd;
+b = '/cameramen.bmp'
+img = imread([a,b]);
+
+tic
+fft(img);
+toc
+
+tic
+dft(img);
+toc
+
+disp('Result shows: Elapsed time is 0.001082 seconds'.\n Elapsed time is 680.035744 seconds.')
