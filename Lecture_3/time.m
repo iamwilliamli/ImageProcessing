@@ -4,7 +4,7 @@ b = '/cameramen.bmp'
 img = imread([a,b]);
 
 tic
-fft(img);
+fft2(img);
 toc
 
 tic
