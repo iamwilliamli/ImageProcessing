@@ -1,9 +1,6 @@
 
 % program to find the 2D dft
 % specially helpful for grayscale images
-% program by: Deepak Kumar Rout
-% vssut, Burla, India
-
 
 clc;
 clear all;

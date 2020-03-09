@@ -1,10 +1,6 @@
 function [out] = dft(img)
 
-%img = gpuArray(img);
-
 im3=im2double(img);
-
-[n,m]=size(im3);
 [n,m]=size(im3);
 c1=0;
 k=1;l=1;
@@ -23,7 +19,7 @@ for l=0:1:m-1
     end
     waitbar(l / m);
 end
-out = im*255;
+out = uint8(im);
 
 end
 

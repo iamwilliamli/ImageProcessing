@@ -9,7 +9,7 @@ for i = 70:130
     end
 end
 %imshow(img)
-out = fftshift(fft(img));
+out = fftshift(fft2(img));
 figure(1)
 imshow(out);
 title('raw')
@@ -20,12 +20,12 @@ for i = 100:160
     end
 end
 %imshow(img)
-out_2 = fftshift(fft(img_2));
+out_2 = fftshift(fft2(img_2));
 figure(2)
 imshow(out_2);
 title('shift')
 img_3 = imrotate(img,45);
-out_3 = fftshift(fft(img_3));
+out_3 = fftshift(fft2(img_3));
 figure(3)
 imshow(out_3);
 title('rotation')
