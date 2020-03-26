@@ -27,8 +27,10 @@ img_3 = (ifft2(change));
 figure(2)
 subplot(121)
 imshow(img_2)
+title('¼ÓÈëÔëÉùÍ¼Ïñ')
 subplot(122)
 imshow(img_3)
+title('Inverse filtering image')
 
 %%
 
