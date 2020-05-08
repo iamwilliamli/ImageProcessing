@@ -53,7 +53,7 @@ sav_mxv = 140;% Threshold
 iter = 1;
 a_remain = 0; % Distance Threshold
 num = 0;
-for i = 17:55
+for i = 10:55
     vot_mat_l = vot_mat(:,:,i);
     [length, width] = size(vot_mat_l); 
     [mxv,idx] = max(vot_mat_l(:));
@@ -83,14 +83,14 @@ title(strcat('Number of circles:',num2str(num)))
 % pl = vot_mat(:,:,banjing);
 banjing
 %% export image
-% for i = 17:55
-%     figure(i);
-%     pl = vot_mat(:,:,i);
-%     mesh(pl);
-%     view(2)
-%     h = figure(i)
-%     saveas(h,['R = ', num2str(i)],'jpg');
-% end
+for i = 10:60
+    figure(i);
+    pl = vot_mat(:,:,i);
+    mesh(pl);
+    view(2)
+    h = figure(i)
+    saveas(h,['R = ', num2str(i)],'jpg');
+end
 %% Functions
 function [img] = img_hough(raw)
 %    ‰»Îª“∂»Õº
